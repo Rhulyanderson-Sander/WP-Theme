@@ -1,0 +1,605 @@
+/*
+
+Theme Name: Erriaga
+Theme URI:
+Author: ErriAga Codes
+Author URI: 
+Description: Tema Feito no Curso
+Version: 1.0
+
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.center{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+.clear{
+    clear: both;
+}
+.w50{
+    float: left;
+    width: 50%;
+    padding: 0 15px;
+}
+
+/* Slider */
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+/* ESTILO PARA O SLICK */
+.slick-dotted ul{
+    list-style-type: none;
+    text-align: center;
+    position: relative;
+    margin-top: 50px;
+}
+.slick-dotted li{
+    display: inline-block;
+    margin: 0 7px;
+}
+.slick-dotted button:focus{
+    outline: 0;
+}
+.slick-dotted li button{
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    color: #d8d8d8;
+    border-width: 0;
+    background: #d8d8d8;
+    opacity: 1;
+    cursor: pointer;
+}
+li.slick-active button{
+    background: #0c3f8a;
+    color: #0c3f8a;
+}
+.slick-slide:focus{
+    outline: none;
+}
+
+/* --- TOPO --- */
+.menu-mobile{
+    display: none;
+    float: right;
+}
+.menu-mobile i{
+    font-size: 33px;
+    color: white;
+    cursor: pointer;
+}
+.menu-mobile ul{
+    list-style-type: none;
+    left: 0;
+    top: 90px;
+    width: 100%;
+    position: absolute;
+    display: none;
+}
+.menu-mobile li{
+    text-align: center;
+    padding: 8px 0;
+    display: inline-block;
+    width: 100%;
+    background: white;
+    border-bottom: 1px solid #00f9f7;
+    transition: 0.4s;
+}
+.menu-mobile li:hover{
+    background: rgb(250, 250, 250);
+}
+.menu-mobile a{
+    display: block;
+    text-decoration: none;
+    color: #202020;
+}
+section.topo{
+    background-image: linear-gradient(114deg, #250e8a, #00f9f7);
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+.logo{
+    float: left;
+}
+.menu-desktop{
+    float: right;
+    padding-top: 15px;
+}
+.menu-desktop li{
+    display: inline-block;
+    margin: 0 15px;
+}
+.menu-desktop a{
+    text-decoration: none;
+    color: white;
+    opacity: 0.6;
+}
+.menu-desktop a:hover{
+    opacity: 1;
+}
+.time-descricao{
+    margin-top: 50px;
+    color: white;
+}
+.time-descricao h2{
+    font-size: 45px;
+    font-weight: bold;
+}
+.time-descricao p{
+    font-size: 14px;
+    margin-top: 10px;
+    max-width: 300px;
+}
+.time-descricao a{
+    display: inline-block;
+    margin-top: 14px;
+    padding: 10px 8px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #1b49a5;
+    background-color: #ffca00;
+    box-shadow: 0 20px 30px 0 rgba(37, 15, 138, 0.2);
+    border-radius: 6px;
+}
+.time-imagem img{
+    width: 100%;
+}
+.circle{
+    position: absolute;
+    left: 50%;
+    margin-top: -30px;
+    transform: translate(-50%,0);
+    width: 70px;
+    height: 70px;
+    background-color: #fff;
+    box-shadow: 0 10px 25px 0 rgba(37, 15, 139, 0.1);
+    border-radius: 50%;
+    line-height: 70px;
+    text-align: center;
+}
+.circle i{
+    position: relative;
+    top: 5px;
+    font-size: 30px;
+    color: #1c4aa6;
+}
+
+/* --- CLIENTES SLIDER ---- */
+section.clientes-slider{
+    padding: 60px 0;
+}
+.clientes-slider .slider-container{
+    max-width: 700px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.slider-container img{
+    padding: 0 20px;
+}
+
+/* --- DIFERENCIAIS -- */
+section.diferenciais{
+    padding: 30px 0;
+}
+.diferenciais h2{
+    color: #202020;
+    font-size: 30px;
+    font-weight: normal;
+    text-align: center;
+}
+.icons-diferenciais{
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.box-single-diferenciais{
+    text-align: center;
+    width: 33.3%;
+    padding: 0 10px;
+}
+.box-single-diferenciais img{
+    max-width: 100%;
+}
+.box-single-diferenciais h3{
+    color: #202020;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 10px 0;
+}
+.box-single-diferenciais p{
+    font-size: 14px;
+    color: #202020;
+}
+
+/* --- SOBRE TIME --- */
+section.sobre-time{
+    background: #f4f9fd;
+    padding: 40px 0;
+}
+.img-time img{
+    max-width: 100%;
+}
+.time-descricao-2{
+    padding: 0 20px;
+}
+.time-descricao-2 h2{
+    color: #202020;
+    font-size: 24px;
+    line-height: 35px;
+}
+.time-descricao-2 p{
+    color: #272727;
+    font-size: 15px;
+    padding-right: 30px;
+}
+
+/* -- DEPOIMENTOS --*/
+section.depoimentos{
+    padding: 100px 0;
+    background-color: #23188f;
+}
+.depoimentos h2{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: normal;
+}
+.depoimentos-box{
+    margin: 10px auto;
+    max-width: 800px;
+    overflow: hidden ;
+    color: white;
+}
+.depoimento-single{
+    display: inline-block;
+    width: 100%;
+}
+.depoimento-single p{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.depoimento-single img{
+    width: 70px;
+    height: 70px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 50%;
+}
+
+/* -- METODOLOGIA -- */
+section.metodologia{
+    position: relative;
+    top: -40px;
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 40px 0;
+    background: white;
+    box-shadow: 10px 20px 60px 0 rgba(0, 0, 0, 0.06);
+    border-top: 3px solid #facc00;
+    text-align: center;
+}
+.metodologia h2{
+    color: #232931;
+    font-size: 24px;
+    font-weight: normal;
+}
+.metodologia p{
+    color: #b4b4b4;
+    font-size: 14px;
+    margin: 15px 0;
+}
+.metodologia a{
+    text-decoration: none;
+    padding: 8px 15px ;
+    color: white;
+    background-color: #23188f;
+    border-radius: 5px;
+    font-size: 14px;
+    display: inline-block;
+    margin-top: 8px;
+}
+
+/* -- FOOTER -- */
+footer{
+    padding: 70px 0;
+}
+footer > .center{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-footer{
+    width: 20%;
+}
+.col-footer h2{
+    color: #232931;
+    font-size: 13px;
+    font-weight: normal;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.col-footer a{
+    text-decoration: none;
+    display: block;
+    color: #b4b4b4;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.col-footer img{
+    width: 120px;
+}
+
+/* -- PAGINA SOBRE EQUIPE -- */
+section.sobre-equipe{
+    padding: 40px 0;
+}
+.equipe-sobre-texto h2{
+    font-size: 45px;
+    color: #202020;
+}
+.equipe-sobre-texto p{
+    font-size: 16px;
+    color: #202020;
+    line-height: 30px;
+}
+.sobre-equipe img{
+    max-width: 100%;
+}
+
+/* -- SOBRE EQUIPE 2 -- */
+section.sobre-imagens{
+    padding: 100px 0;
+    background-color: #F4F9FD;
+}
+.sobre-imagens > .center{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sobre-imagens img{
+    max-width: 100%;
+}
+.sobre-imagens .img-sobre{
+    padding: 0 30px;
+    width: 25%;
+}
+
+/* -- PAGINA CONTATO --*/
+section.contato{
+    padding: 30px 0;
+}
+.contato-info h2{
+    font-size: 43px;
+    color: #202020;
+    font-weight: normal;
+}
+.contato-info p{
+    color: #202020;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.mapa-container{
+    width: 100%;
+    padding-top: 70%;
+    position: relative;
+}
+div#mapa{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    max-width: 498px;
+}
+.contato-form{
+    padding: 0 30px;
+    margin-top: 40px;
+}
+.contato-form input[type=text]{
+    width: 100%;
+    height: 48px;
+    margin-bottom: 15px;
+    border: 1px solid #e3e3e3;
+    padding-left: 8px;
+    font-size: 16px;
+    box-shadow: 0 2px 4px 0 rgba(92, 99, 110, 0.1);
+}
+.contato-form select{
+    width: 100%;
+    height: 48px;
+    margin-bottom: 15px;
+    border: 1px solid #e3e3e3;
+    padding-left: 8px;
+    font-size: 16px;
+    box-shadow: 0 2px 4px 0 rgba(92, 99, 110, 0.1);
+}
+.contato-form textarea{
+    width: 100%;
+    height: 120px;
+    margin-bottom: 15px;
+    border: 1px solid #e3e3e3;
+    padding: 8px;
+    font-size: 16px;
+    box-shadow: 0 2px 4px 0 rgba(92, 99, 110, 0.1);
+    resize: none;
+}
+.contato-form input[type=submit]{
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    box-shadow: 0 20px 30px 0 rgba(203, 203, 103, 0.2);
+    background-color: #212a97;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 17px;
+}
+
+/* PAGE ERROR */
+section.error{
+    text-align: center;
+}
+section.error img{
+    display: inline-block;
+    max-width: 700px;
+    width: 100%;
+}
+
+@media screen and (max-width:768px) {
+    .menu-mobile{
+        display: block;
+    }
+    .menu-desktop{
+        display: none;
+    }
+    .w50{
+        width: 100%;
+    }
+    .box-single-diferenciais{
+        width: 100%;
+        padding: 30px 0;
+    }
+    .img-time{
+        margin-top: 30px;
+    }
+    .col-footer{
+        margin-bottom: 30px;
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    section.sobre-equipe{
+        text-align: center;
+    }
+    .equipe-sobre-texto{
+        margin-bottom: 20px;
+    }
+    .sobre-imagens .img-sobre{
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+}
