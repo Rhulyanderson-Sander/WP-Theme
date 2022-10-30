@@ -7,12 +7,12 @@
             <br>
             <br>
             <div class="w50 time-descricao">
-                <h2>Melhore a comunicação com seu cliente e time.</h2>
-                <p>Consultoria especializada em startups,empresas,principalmente pessoas.</p>
+                <h2><?php the_field('chamada_topo'); ?></h2>
+                <p><?php the_field('texto_topo'); ?></p>
                 <a target="_blank" href="">Ver demonstração</a>
             </div> <!-- w50 -->
             <div class="w50 time-imagem">
-                <img src="<?php echo get_theme_root_uri (); ?>/ErriAga/images/equipe.png" alt="" srcset="">
+                <img src="<?php the_field('imagem_topo'); ?>" alt="" srcset="">
             </div> <!-- w50 -->
             <div class="clear"></div>
         </div> <!-- center -->
@@ -60,16 +60,7 @@
         <div class="center">
             <div class="w50 time-descricao-2">
                 <h2>Um time experiente, <br> comunicador e coeso.</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Reiciendis minus totam nobis! Molestiae quidem illo, repellat 
-                    vitae nihil praesentium perspiciatis eos temporibus animi ad 
-                    esse cum sint pariatur officia fuga.
-                    <br> <br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Reiciendis minus totam nobis! Molestiae quidem illo, repellat 
-                    vitae nihil praesentium perspiciatis eos temporibus animi ad 
-                    esse cum sint pariatur officia fuga.
-                </p>
+                <p><?php the_field('sobre_home'); ?></p>
             </div> <!-- w50-->
             <div class="w50 img-time">
                 <img src="<?php echo get_theme_root_uri (); ?>/ErriAga/images/time.png">
