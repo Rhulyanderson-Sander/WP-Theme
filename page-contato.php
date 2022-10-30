@@ -10,9 +10,12 @@
                 <div class="w50 contato-info">
                     <h2>A mais importante, <br> primeira conversa.</h2>
                     <br>
-                    <p><b>Telefone: </b>+55 (31) XXXX-XXXX</p>
-                    <p><b>E-mail: </b>Contato@erriagacodes.com</p>
-                    <p><b>Endereço: </b></p>
+                    <?php 
+                        while(have_rows('nome_tipo_contato')){
+                            the_row();
+                    ?>
+                    <p><b><?php echo get_sub_field('categoria') ?></b><?php echo get_sub_field('valor') ?></p>
+                    <?php } ?>
 
                     <div class="mapa-container">
                         <div id="mapa">
